@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoGame</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+    <div class="game">
+        <div class="hud">
+            <div class="hud__label">Энергия</div>
+            <div class="energy"><div id="energy-fill"></div></div>
+        </div>
+        <div class="score">
+            <div class="score__label">Очки</div>
+            <div id="score">0</div>
+        </div>
+        <div class="game-over" id="game-over">
+            <div class="game-over__title">Игра окончена</div>
+            <div class="game-over__reason" id="game-over-reason"></div>
+            <div class="game-over__hint">Enter или Space</div>
+        </div>
+        <div class="fireworks" id="fireworks"></div>
+        <div id="dino"></div>
+        <div id="obstacles"></div>
+        <div id="items"></div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
