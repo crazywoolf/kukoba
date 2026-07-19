@@ -22,11 +22,24 @@
     }
 }
 
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .game {
     width: 600px;
     height: 200px;
     border-bottom: 1px solid #000;
-    margin: auto;
     position: relative;
     overflow: hidden;
 }
@@ -248,4 +261,11 @@
 
 .jump {
     animation: jump 0.68s ease-in-out;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    .game {
+        transform: rotate(90deg);
+        transform-origin: center center;
+    }
 }

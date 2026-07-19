@@ -300,11 +300,22 @@ document.addEventListener("keydown", function(event) {
 });
 
 document.addEventListener("click", function() {
+    if (gameOver) {
+        resetGame();
+        return;
+    }
+
     jump();
 });
 
 document.addEventListener("touchstart", function(event) {
     event.preventDefault();
+
+    if (gameOver) {
+        resetGame();
+        return;
+    }
+
     jump();
 });
 
